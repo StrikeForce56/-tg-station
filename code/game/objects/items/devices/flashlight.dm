@@ -149,6 +149,30 @@
 	force = 9 // Not as good as a stun baton.
 	brightness_on = 5 // A little better than the standard flashlight.
 	hitsound = 'sound/weapons/genhit1.ogg'
+	
+//Look ma! I made these!
+/obj/item/device/flashlight/torch
+	name = "torch"
+	desc = "A wooden torch. Provides light, warmth, and could be used as a pretty good weapon in a pinch."
+	icon = 'icons/obj/lighting.dmi'
+	icon_state = "wtorch"
+	item_state = "wtorch"
+	force = 10
+	w_class = 3
+	action_button_name = "Toggle Light"
+	damtype = "fire"	//Torches burn you. Who would've known?
+	brightness_on = 3
+
+/obj/item/device/flashlight/torch/stone
+	name = "stone torch"
+	desc = "By using stone for the handle instead of wood, the robustness factor and lighting (for some reason) of this torch has increased by 20%."
+	icon = 'icons/obj/lighting.dmi'
+	icon_state = "storch"
+	item_state = "storch"
+	force = 12
+	w_class = 3
+	action_button_name = "Toggle Light"
+	brightness_on = 4
 
 // the desk lamps are a bit special
 /obj/item/device/flashlight/lamp
